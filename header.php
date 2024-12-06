@@ -7,17 +7,32 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header>
-    <div class="container">
-        <h1><a href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a></h1>
-        <nav>
-            <?php
-            wp_nav_menu(array(
-                'theme_location' => 'primary-menu',
-                'container' => false,
-                'menu_class' => 'nav-menu',
-            ));
-            ?>
-        </nav>
-    </div>
-</header>
+    <header class="site-header">
+        <div class="header-container">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="site-branding">
+                EZEBLaMER
+            </a>
+
+            <nav class="main-navigation">
+                <?php
+                $current_page = is_front_page() ? 'inicio' : '';
+                ?>
+                <a href="<?php echo esc_url(home_url('/')); ?>" 
+                   class="nav-link <?php echo $current_page === 'inicio' ? 'active' : ''; ?>">
+                    Inicio
+                </a>
+                <a href="<?php echo esc_url(home_url('/acerca-de-mi')); ?>" 
+                   class="nav-link <?php echo is_page('acerca-de-mi') ? 'active' : ''; ?>">
+                    Acerca de mi
+                </a>
+                <a href="<?php echo esc_url(home_url('/proyectos')); ?>" 
+                   class="nav-link <?php echo is_page('proyectos') ? 'active' : ''; ?>">
+                    Proyectos
+                </a>
+            </nav>
+
+            <a href="<?php echo esc_url(home_url('/contacto')); ?>" class="contact-button">
+                Contáctame
+            </a>
+        </div>
+    </header>

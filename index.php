@@ -1,21 +1,15 @@
 <?php get_header(); ?>
 
-<div class="container">
-    <main class="main-content">
-        <?php
-        if (have_posts()) :
-            while (have_posts()) : the_post();
-                ?>
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <?php the_content(); ?>
-                </article>
-                <?php
-            endwhile;
-        else :
-            echo '<p>No hay contenido para mostrar.</p>';
-        endif;
+<main class="header-container">
+    <div class="main-content">
+    <?php
+        // Method 1: Using img tag with get_template_directory_uri()
         ?>
-    </main>
-</div>
+        <img 
+        src="<?php echo get_template_directory_uri(); ?>/ezequielBackground.jpg" 
+        alt="Ezequiel Background"
+        class="my-image"
+        />
+    </div>
+</main>
 <?php get_footer(); ?>

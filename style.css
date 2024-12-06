@@ -1,9 +1,10 @@
 /*
-Theme Name: Blogs EZEQUIEL BLANCO
+Theme Name: PORTAFOLIO WEB EZEQUIEL BLANCO
 Theme URI: https://wordpress.org/themes/twentytwentyfour/
 Author: the WordPress team
 Author URI: https://wordpress.org
-Description: Twenty Twenty-Four isss designed to be flexible, versatile and applicable to any website. Its collection of templates and patterns tailor to different needs, such as presenting a business, blogging and writing or showcasing work. A multitude of possibilities open up with just a few adjustments to color and typography. Twenty Twenty-Four comes with style variations and full page designs to help speed up the site building process, is fully compatible with the site editor, and takes advantage of new design tools introduced in WordPress 6.4.
+Description:Hola! mi nombre es Ezequiel Blanco (amo hacer todo tipos de retratos)   tengo una gran afinidad hacía el trabajo colaborativo, me gusta crear diseños que inspiren e involucren a las personas. Como diseñador UI, considero que un buen producto no solo brinda una solución sino que permite crear una experiencia emocional en las personas que lo usan.
+En mi proceso creativo utilizo herramientas como Figma, Adobe XD, Photoshop e Illustrator y en mi rol como developer front-end utilizo para programar Visual Studio Code y Sublime text. que me ayudan en el flujo de trabajo para la producción y creación de interfaces web. diseñadas y programadas.
 Requires at least: 6.4
 Tested up to: 6.7
 Requires PHP: 7.0
@@ -14,39 +15,79 @@ Text Domain: aprendiendoezequiel
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, accessibility-ready, blog, portfolio, news
 */
 
-
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #e31717;
-  background-color: aqua;
+  color: #995252;
+  background-color: #171718;
 }
 
-.container {
-  width: 80%;
-  margin: auto;
-  overflow: hidden;
+.site-header {
+  background-color: #171718;
+  padding: 1rem 2rem;
 }
 
-header {
-  background: #333;
-  color: #fff;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #bbb 3px solid;
+.header-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-header a {
-  color: #fff;
+.site-branding {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
+}
+
+.main-navigation {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4CAF50;
+}
+
+.contact-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-button:hover {
+  background-color: #45a049;
 }
 
 footer {
-  background: #333;
+  background-color: #131414;
   color: #fff;
   text-align: center;
   padding: 20px;
   margin-top: 20px;
+}
+
+.my-image {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em 0;
 }
