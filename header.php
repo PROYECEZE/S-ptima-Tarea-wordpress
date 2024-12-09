@@ -7,13 +7,12 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <header class="site-header">
-        <div class="header-container">
-            <a href="<?php echo esc_url(home_url('/')); ?>" class="site-branding">
+    <header class="header">
+        <div class="header__container">
+            <a href="<?php echo esc_url(home_url('/')); ?>" class="header__branding">
                 EZEBLaMER
             </a>
-
-            <nav class="main-navigation">
+            <nav class="header__navigation">
                 <?php
                 $current_page = is_front_page() ? 'inicio' : '';
                 ?>
@@ -31,7 +30,7 @@
                 </a>
             </nav>
 
-            <a href="<?php echo esc_url(home_url('/contacto')); ?>" class="contact-button">
+            <a href="<?php echo esc_url(home_url('/contacto')); ?>" class="header__contact">
                 Contáctame
             </a>
         </div>
