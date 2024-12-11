@@ -8,13 +8,13 @@ get_header(); ?>
     <?php
         ?>
         <img 
-        src="<?php echo get_template_directory_uri(); ?>/ezequielBackground.jpg" 
+        src="<?php echo get_template_directory_uri(); ?>/image/ezequielBackground.jpg" 
         alt="Ezequiel Background"
         />
     </section>
     <section class="portfolio__section">
         <h1 class="portfolio__Iam">
-            <span><?php echo esc_html__('Soy', 'theme-textdomain'); ?></span> 
+            <span><?php echo esc_html__('Soy', 'aprendiendoezequiel'); ?></span> 
             <span class="portfolio__author"><?php echo esc_html(get_theme_mod('portfolio_name', 'EZEQUIEL BLANCO')); ?></span>
         </h1>
         <?php
