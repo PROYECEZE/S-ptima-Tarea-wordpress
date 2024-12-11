@@ -37,7 +37,7 @@ get_header(); ?>
         $cv_obtaining_id = attachment_url_to_postid(wp_get_upload_dir()['baseurl'] . '/portafolio/CVEZE.pdf');
         $cv_url = wp_get_attachment_url($cv_obtaining_id);
         ?>
-        <div class="portfolio__btn">
+        <section class="portfolio__btn">
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('aprendiendoezequiel'))); ?>" class="portfolio__proyect">
                 Ver proyectos
             </a>
@@ -49,6 +49,23 @@ get_header(); ?>
                 </svg>
                 Descargar CV
             </a>
-        </div>
+        </section>
+        <section class="about-me">
+            <h2 class="about-me__title"><?php echo get_theme_mod('about_title', 'Acerca de mi'); ?></h2>
+            <div class="about-me__content">
+                <div class="about-me__text">
+                <?php echo wpautop(get_theme_mod('about_description', 'Hola! mi nombre es Ezequiel Blanco (amo hacer todo tipos de retratos) tengo una gran afinidad hacia el trabajo colaborativo, me gusta crear diseños que inspiren e involucren a las personas. Como diseñador UI, considero que un buen producto no solo brinda una solución sino que permite crear una experiencia emocional en las personas que lo usan.')); ?>
+                <?php echo wpautop(get_theme_mod('about_tools', 'En mi proceso creativo utilizo herramientas como Figma, Adobe XD, Photoshop e Illustrator y en mi rol como developer front-end utilizo para programar Visual Studio Code y Sublime text. que me ayudan en el flujo de trabajo para la producción y creación de interfaces web. diseñadas y programadas.')); ?>
+                <a href="<?php echo get_theme_mod('about_button_url', '#'); ?>" class="about-me__button">
+                    <?php echo get_theme_mod('about_button_text', 'Mas acerca de mi'); ?>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                </div>
+                    <?php
+                        $image_url = get_theme_mod('about_image', get_template_directory_uri() . '/image/photoAu.png');
+                    ?>
+                    <img src="<?php echo esc_url($image_url); ?>" alt="Author photo" />
+            </div>
+        </section>
 </main>
 <?php get_footer(); ?>
