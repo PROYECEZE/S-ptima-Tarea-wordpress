@@ -347,3 +347,7 @@ template {
 [hidden] {
   display: none;
 }
+
+.about-me__text p{
+  margin-top: 0px;
+}
