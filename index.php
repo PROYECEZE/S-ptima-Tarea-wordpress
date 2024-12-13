@@ -69,6 +69,65 @@ get_header(); ?>
                 </div>
             </div>
         </section>
+        <section class="skills">
+            <h2 class="skills__title"><?php echo get_theme_mod('aprendiendoezequiel', 'Mis habilidades'); ?></h2>
+            <div class="skills__grid">
+                <div class="skills__card">
+                    <div class="skills__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                            <line x1="12" y1="18" x2="12" y2="18"></line>
+                        </svg>
+                    </div>
+                    <h3 class="skills__card-title">
+                        <?php echo get_theme_mod('skill_1_title', 'Responsive design'); ?>
+                    </h3>
+                    <p class="skills__card-text">
+                        <?php echo get_theme_mod('skill_1_description', 'Con mi experiencia en patrones de diseño responsive tengo una visión clara acerca de como implementarlos de manera efectiva en cualquier proyecto.'); ?>
+                    </p>
+                </div>
+                <div class="skills__card">
+                    <div class="skills__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="3" y1="9" x2="21" y2="9"></line>
+                            <line x1="9" y1="21" x2="9" y2="9"></line>
+                        </svg>
+                    </div>
+                    <h3 class="skills__card-title">
+                        <?php echo get_theme_mod('skill_2_title', 'Sistema de diseño'); ?>
+                    </h3>
+                    <p class="skills__card-text">
+                        <?php echo get_theme_mod('skill_2_description', 'Tengo manejo de sistemas de diseño, lo cual permite agilidad en el proceso de diseño acortando los tiempos en la creación de las interfaces dentro del proyecto.'); ?>
+                    </p>
+                </div>
+                <div class="skills__card">
+                    <div class="skills__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="skills__card-title">
+                        <?php echo get_theme_mod('skill_3_title', 'Coworking'); ?>
+                    </h3>
+                    <p class="skills__card-text">
+                        <?php echo get_theme_mod('skill_3_description', 'Trato de ser un activo valioso en el equipo que esté trabajando, aportando mis conocimientos y material que optimice el flujo de trabajo en el desarrollo del proyecto.'); ?>
+                    </p>
+                </div>
+            </div>
+            <div class="skills__button-wrapper">
+                <a href="<?php echo get_theme_mod('skills_button_url', '#'); ?>" class="skills__button">
+                    <?php echo get_theme_mod('skills_button_text', 'Ver más de mis skills'); ?>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </section>
         <section class="portraits">
             <h2 class="portraits__title"><?php echo get_theme_mod('aprendiendoezequiel', 'Mis Retratos'); ?></h2>
             <div class="portraits__grid">
@@ -81,7 +140,6 @@ get_header(); ?>
                     </div>
                 <?php endfor; ?>
             </div>
-
             <div class="portraits__button-wrapper">
                 <a href="<?php echo get_theme_mod('portraits_link', '#'); ?>" class="portraits__button">
                     Ver mas Retratos
