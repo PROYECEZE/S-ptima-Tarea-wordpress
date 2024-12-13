@@ -5,9 +5,7 @@ Template Name: Portfolio Page
 get_header(); ?>
 <main>
     <section class="portfolio">
-        <?php
-            ?>
-          <img class="portfolio__image"
+        <img class="portfolio__image"
             src="<?php echo get_template_directory_uri() . '/image/ezequielBackground.jpg'; ?>"
             alt="Ezequiel Background"
         />
@@ -55,11 +53,11 @@ get_header(); ?>
             <div class="about-me__content">
                 <div class="about-me__text">
                     <?php echo wpautop(get_theme_mod('about_description', 'Hola! mi nombre es Ezequiel Blanco (amo hacer todo tipos de retratos) tengo una gran afinidad hacia el trabajo colaborativo, me gusta crear diseños que inspiren e involucren a las personas. Como diseñador UI, considero que un buen producto no solo brinda una solución sino que permite crear una experiencia emocional en las personas que lo usan.')); ?>
-                        <?php echo wpautop(get_theme_mod('about_tools', 'En mi proceso creativo utilizo herramientas como Figma, Adobe XD, Photoshop e Illustrator y en mi rol como developer front-end utilizo para programar Visual Studio Code y Sublime text. que me ayudan en el flujo de trabajo para la producción y creación de interfaces web. diseñadas y programadas.')); ?>
-                        <a href="<?php echo get_theme_mod('about_button_url', '#'); ?>" class="about-me__button">
-                            <?php echo get_theme_mod('about_button_text', 'Mas acerca de mi'); ?>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                        </a>
+                    <?php echo wpautop(get_theme_mod('about_tools', 'En mi proceso creativo utilizo herramientas como Figma, Adobe XD, Photoshop e Illustrator y en mi rol como developer front-end utilizo para programar Visual Studio Code y Sublime text. que me ayudan en el flujo de trabajo para la producción y creación de interfaces web. diseñadas y programadas.')); ?>
+                    <a href="<?php echo get_theme_mod('about_button_url', '#'); ?>" class="about-me__button">
+                        <?php echo get_theme_mod('about_button_text', 'Mas acerca de mi'); ?>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                    </a>
                 </div>
                 <div class="about-me__image">
                     <?php
