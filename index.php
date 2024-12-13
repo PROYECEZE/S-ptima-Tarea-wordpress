@@ -128,24 +128,67 @@ get_header(); ?>
                 </a>
             </div>
         </section>
+        <section class="some-projects">
+            <h2 class="some-projects__title"><?php echo get_theme_mod('aprendiendoezequiel', 'Algunos de mis proyectos'); ?></h2>
+            <div class="some-projects__grid">
+                <div class="some-projects__item">
+                    <?php
+                    $image_url1 = get_theme_mod("portrait_image_1", get_template_directory_uri() . "/image/proyect.png");
+                    ?>
+                    <img src="<?php echo esc_url($image_url1); ?>" alt="proyect 1" class="some-project__image">
+                </div>
+                <div class="some-projects__item">
+                    <?php 
+                    $image_url2 = get_theme_mod("portrait_image_2", get_template_directory_uri() . "/image/proyect2.png");
+                    ?>
+                    <img src="<?php echo esc_url($image_url2); ?>" alt="proyect 2" class="some-project__image">
+                </div>
+                <div class="some-projects__item">
+                    <?php 
+                    $image_url3 = get_theme_mod("portrait_image_3", get_template_directory_uri() . "/image/proyect3.png");
+                    ?>
+                    <img src="<?php echo esc_url($image_url3); ?>" alt="proyect 3" class="some-project__image">
+                </div>
+            </div>
+            <div class="some-projects__button-wrapper">
+                <a href="<?php echo get_theme_mod('some-projects_link', '#'); ?>" class="some-projects__button">
+                    Ver más en Behance
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+            </div>
+        </section>
         <section class="portraits">
             <h2 class="portraits__title"><?php echo get_theme_mod('aprendiendoezequiel', 'Mis Retratos'); ?></h2>
             <div class="portraits__grid">
-                <?php for ($i = 1; $i <= 3; $i++) : ?>
-                    <div class="portraits__item">
-                        <?php
-                        $image_url = get_theme_mod("portrait_image_$i", get_template_directory_uri() . "/image/painting.png");
-                        ?>
-                        <img src="<?php echo esc_url($image_url); ?>" alt="Retrato <?php echo $i; ?>" class="portraits__image">
-                    </div>
-                <?php endfor; ?>
+                <div class="portraits__item">
+                    <?php
+                    $image_url1 = get_theme_mod("portrait_image_1", get_template_directory_uri() . "/image/painting.png");
+                    ?>
+                    <img src="<?php echo esc_url($image_url1); ?>" alt="Retrato 1" class="portraits__image">
+                </div>
+                <div class="portraits__item">
+                    <?php 
+                    $image_url2 = get_theme_mod("portrait_image_2", get_template_directory_uri() . "/image/painting2.png");
+                    ?>
+                    <img src="<?php echo esc_url($image_url2); ?>" alt="Retrato 2" class="portraits__image">
+                </div>
+                <div class="portraits__item">
+                    <?php
+                    $image_url3 = get_theme_mod("portrait_image_3", get_template_directory_uri() . "/image/painting3.png");
+                    ?>
+                    <img src="<?php echo esc_url($image_url3); ?>" alt="Retrato 3" class="portraits__image">
+                </div>
             </div>
             <div class="portraits__button-wrapper">
                 <a href="<?php echo get_theme_mod('portraits_link', '#'); ?>" class="portraits__button">
-                    Ver mas Retratos
+                    Ver más Retratos
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
                 </a>
             </div>
         </section>
 </main>
 <?php get_footer(); ?>
+
+
+
+
