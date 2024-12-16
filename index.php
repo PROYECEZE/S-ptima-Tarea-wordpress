@@ -39,7 +39,7 @@ get_header(); ?>
             <a href="<?php echo esc_url(get_permalink(get_page_by_path('aprendiendoezequiel'))); ?>" class="portfolio__proyect">
                 Ver proyectos
             </a>
-            <a href="<?php echo esc_url($cv_url); ?>" class="portfolio__cv" download="CVEZE.pdf">
+            <a href="<?php echo esc_url($cv_url); ?>" class="portfolio__cv" download='CVEZE.pdf'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="portfolio__icon">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
                     <polyline points="7 10 12 15 17 10"/>
@@ -133,19 +133,19 @@ get_header(); ?>
                     <?php
                     $image_url1 = get_theme_mod("portrait_image_1", get_template_directory_uri() . "/image/proyect.png");
                     ?>
-                    <img src="<?php echo esc_url($image_url1); ?>" alt="proyect 1" class="some-project__image">
+                    <img src="<?php echo esc_url($image_url1); ?>" alt="proyect 1" class="some-projects__image">
                 </div>
                 <div class="some-projects__item">
                     <?php 
                     $image_url2 = get_theme_mod("portrait_image_2", get_template_directory_uri() . "/image/proyect2.png");
                     ?>
-                    <img src="<?php echo esc_url($image_url2); ?>" alt="proyect 2" class="some-project__image">
+                    <img src="<?php echo esc_url($image_url2); ?>" alt="proyect 2" class="some-projects__image">
                 </div>
                 <div class="some-projects__item">
                     <?php 
                     $image_url3 = get_theme_mod("portrait_image_3", get_template_directory_uri() . "/image/proyect3.png");
                     ?>
-                    <img src="<?php echo esc_url($image_url3); ?>" alt="proyect 3" class="some-project__image">
+                    <img src="<?php echo esc_url($image_url3); ?>" alt="proyect 3" class="some-projects__image">
                 </div>
             </div>
             <div class="some-projects__button-wrapper">

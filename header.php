@@ -13,15 +13,15 @@
                 EZEBLaMER
             </a>
             <nav class="header__navigation">
-                <a href="<?php echo esc_url(home_url('/')); ?>" 
+                <a href="<?php echo esc_url(home_url('/')); ?>"
                     class="nav-link <?php echo is_front_page() ? 'active' : ''; ?>">
                     <? echo __('Inicio', 'aprendiendoezequiel'); ?>
                 </a>
-                <a href="<?php echo esc_url(home_url('/acerca-de-mi')); ?>" 
+                <a href="<?php echo esc_url(home_url('/acerca-de-mi')); ?>"
                     class="nav-link <?php echo is_page('acerca-de-mi') ? 'active' : ''; ?>">
                     <? echo __('Acerca de mi', 'aprendiendoezequiel'); ?>
                 </a>
-                <a href="<?php echo esc_url(home_url('/proyectos')); ?>" 
+                <a href="<?php echo esc_url(home_url('/proyectos')); ?>"
                     class="nav-link <?php echo is_page('proyectos') ? 'active' : ''; ?>">
                     <? echo __('Proyectos', 'aprendiendoezequiel'); ?>
                 </a>
